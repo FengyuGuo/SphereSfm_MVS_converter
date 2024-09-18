@@ -8,16 +8,7 @@ This tool requires [OpenCV](https://docs.opencv.org/4.5.5/d2/de6/tutorial_py_set
 
 ## Run SphereSfm on dataset
 
-Follow the instruction of [SphereSfm](https://github.com/json87/SphereSfM) to get the pose of sphere image. And export the result as txt. The folder should be like below.
-
-.
-├── cameras.txt
-├── db2.db
-├── images
-├── images.txt
-├── mask.png
-├── points3D.txt
-└── project.ini
+Follow the instruction of [SphereSfm](https://github.com/json87/SphereSfM) to get the pose of sphere image. And export the result as txt. The file images.txt and points3D.txt is necessary for next steps.
 
 ## Modify the config
 
