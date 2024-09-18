@@ -12,20 +12,12 @@ Follow the instruction of [SphereSfm](https://github.com/json87/SphereSfM) to ge
 
 .
 ├── cameras.txt
-
 ├── db2.db
-
 ├── images
-
 ├── images.txt
-
 ├── mask.png
-
 ├── points3D.txt
-
-└── project.ini
-
-
+├── project.ini
 ## Modify the config
 
 Modify [config.json](https://github.com/FengyuGuo/SphereSfm_MVS_converter/blob/main/config.json). Include the path of the output of SphereSfm, size of equirect image and size of output perspective image.
