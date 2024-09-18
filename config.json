@@ -1,0 +1,7 @@
+{
+    "input_path":"/home/guo/dataset/insta360",
+    "perspective_image_size":480,
+    "equirect_width": 1920,
+    "equirect_height": 960,
+    "comment_": "width of equirect image should be 4 times of perspective image size, height should be 2 times"
+}
