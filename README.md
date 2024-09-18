@@ -22,7 +22,7 @@ run
 
 > python3 convert_img.py config.json
 
-This will create persp folder in working folder of SphereSfm.
+This will create /persp folder in working folder of SphereSfm.
 
 The conversion result can be visualized in COLMAP. The sphere camera looks like cubes in the reconstructed scene.
 
