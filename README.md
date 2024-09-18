@@ -15,12 +15,9 @@ Follow the instruction of [SphereSfm](https://github.com/json87/SphereSfM) to ge
 ├── db2.db
 ├── images
 ├── images.txt
-├── mask_1.png
 ├── mask.png
-├── persp
 ├── points3D.txt
-├── project.ini
-└── tree.txt
+└── project.ini
 
 ## Modify the config
 
