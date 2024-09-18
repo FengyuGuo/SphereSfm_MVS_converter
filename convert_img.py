@@ -40,7 +40,7 @@ imgs.sort()
 mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
 mask = (mask.astype('float') / 255.0).astype('uint8')
 mask = np.stack([mask, mask,  mask], 2)
-print(mask.shape, mask.dtype)
+# print(mask.shape, mask.dtype)
 
 for name, param in out_img_params.items():
     mapx, mapy = eqruirect2persp_map((mask.shape[0], mask.shape[1]), param['fov'], param['theta'], param['phi'], param['height'], param['width'])

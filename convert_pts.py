@@ -20,6 +20,9 @@ persp_size = config['perspective_image_size']
 equirect_width = config['equirect_width']
 equirect_height = config['equirect_height']
 
+if not os.path.exists(out_path):
+    os.mkdir(out_path)
+
 out_img_params = {
     'front':{'theta':0, 'phi': 0, 'fov': 90, 'width': persp_size, 'height': persp_size},
     'right':{'theta':90, 'phi':0, 'fov': 90, 'width': persp_size, 'height': persp_size},

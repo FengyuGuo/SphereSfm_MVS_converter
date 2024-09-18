@@ -1,0 +1,7 @@
+{
+    "input_path":"/home/guo/dataset/Sphere",
+    "perspective_image_size":1760,
+    "equirect_width": 7040,
+    "equirect_height": 3520,
+    "comment_": "width of equirect image should be 4 times of perspective image size, height should be 2 times"
+}
