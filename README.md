@@ -12,11 +12,17 @@ Follow the instruction of [SphereSfm](https://github.com/json87/SphereSfM) to ge
 
 .
 ├── cameras.txt
+
 ├── db2.db
+
 ├── images
+
 ├── images.txt
+
 ├── mask.png
+
 ├── points3D.txt
+
 └── project.ini
 
 
