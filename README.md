@@ -26,7 +26,7 @@ This will create persp folder in working folder of SphereSfm.
 
 The conversion result can be visualized in COLMAP. The sphere camera looks like cubes in the reconstructed scene.
 
-![pose_viz](https://github.com/FengyuGuo/SphereSfm_MVS_converter/blob/main/asset/cam_pose.jpg)
+![pose_viz](https://github.com/FengyuGuo/SphereSfm_MVS_converter/blob/main/asset/cam_pose.png)
 
 ## Run dense reconstruction of COLMAP
 
@@ -36,4 +36,4 @@ Theratically the output format confines all version of COLMAP. So you can use ne
 
 Below is the result after stereo and fusion.
 
-![result](https://github.com/FengyuGuo/SphereSfm_MVS_converter/blob/main/asset/result.jpg)
+![result](https://github.com/FengyuGuo/SphereSfm_MVS_converter/blob/main/asset/result.png)
