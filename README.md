@@ -10,14 +10,15 @@ This tool requires [OpenCV](https://docs.opencv.org/4.5.5/d2/de6/tutorial_py_set
 
 Follow the instruction of [SphereSfm](https://github.com/json87/SphereSfM) to get the pose of sphere image. And export the result as txt. The folder should be like below.
 
-.
-├── cameras.txt
-├── db2.db
-├── images
-├── images.txt
-├── mask.png
-├── points3D.txt
-├── project.ini
+>.
+>├── cameras.txt
+>├── db2.db
+>├── images
+>├── images.txt
+>├── mask.png
+>├── points3D.txt
+>└── project.ini
+
 ## Modify the config
 
 Modify [config.json](https://github.com/FengyuGuo/SphereSfm_MVS_converter/blob/main/config.json). Include the path of the output of SphereSfm, size of equirect image and size of output perspective image.
