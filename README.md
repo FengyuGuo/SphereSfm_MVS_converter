@@ -32,7 +32,7 @@ The conversion result can be visualized in COLMAP. The sphere camera looks like 
 
 Start COLMAP. Use Import Model to import the converted data. Then run the dense reconstruction pipeline to get the dense point cloud.
 
-Theratically the output format confines all version of COLMAP. So you can use newest version of COLMAP the run dense reconstruction.
+Theratically the output format confines all version of COLMAP. So you can use newest version of COLMAP to run dense reconstruction.
 
 Below is the result after stereo and fusion.
 
