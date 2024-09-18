@@ -15,6 +15,12 @@ input_path = os.path.join(config['input_path'], 'images')
 out_path = os.path.join(config['input_path'], 'persp', 'images')
 mask_path = os.path.join(config['input_path'], 'mask.png')
 
+equirect_width = config['equirect_width']
+equirect_height = config['equirect_height']
+
+use_mask = False
+if os.path.exists(mask_path):
+    use_mask = True
 persp_size = config['perspective_image_size']
 
 out_img_params = {
@@ -36,21 +42,24 @@ for _, __, files in os.walk(input_path):
     break
 
 imgs.sort()
-
-mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
-mask = (mask.astype('float') / 255.0).astype('uint8')
-mask = np.stack([mask, mask,  mask], 2)
+if use_mask:
+    mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
+    mask = (mask.astype('float') / 255.0).astype('uint8')
+    mask = np.stack([mask, mask,  mask], 2)
 # print(mask.shape, mask.dtype)
 
 for name, param in out_img_params.items():
-    mapx, mapy = eqruirect2persp_map((mask.shape[0], mask.shape[1]), param['fov'], param['theta'], param['phi'], param['height'], param['width'])
+    mapx, mapy = eqruirect2persp_map((equirect_height, equirect_width), param['fov'], param['theta'], param['phi'], param['height'], param['width'])
     param['mapx'] = mapx
     param['mapy'] = mapy
 
 for f in files:
     img_path = os.path.join(input_path, f)
     equiRect = cv2.imread(img_path)
-    masked = equiRect * mask
+    if use_mask:
+        masked = equiRect * mask
+    else:
+        masked = equiRect
     for name, param in out_img_params.items():
         out_name = f.split('.')[0] + '_{}.jpg'.format(name)
         img_out_path = os.path.join(out_path, out_name)
