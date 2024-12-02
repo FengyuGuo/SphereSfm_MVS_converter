@@ -53,7 +53,7 @@ for name, param in out_img_params.items():
     param['mapx'] = mapx
     param['mapy'] = mapy
 
-for f in files:
+for f in imgs:
     img_path = os.path.join(input_path, f)
     equiRect = cv2.imread(img_path)
     if use_mask:
